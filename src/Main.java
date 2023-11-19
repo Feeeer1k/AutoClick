@@ -1,5 +1,9 @@
+import Paketik.GUI;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        GUI app = new GUI();
+        app.setVisible(true);
+        app.setResizable(false);
     }
 }

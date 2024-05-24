@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-//хуйня хужна для выбора разный кнопок
+// для выбора разный кнопок
 class ClickChech {
     private static boolean boolValue;
 
@@ -18,7 +18,7 @@ class ClickChech {
         boolValue = newboolValue;
     }
 }
-        //хуйня нужна для задержки
+        //нужна для задержки
 class Config {
     private static int value; // Статическое поле для хранения значения
 
@@ -32,7 +32,7 @@ class Config {
 }
 
 public class GUI extends JFrame {
-    //насрал кнопками
+    // кнопки
     private JButton button = new JButton("Вкл");
     private JButton button2 = new JButton("Выкл");
     private JLabel label = new JLabel("интервал кликов(мс)");
@@ -55,15 +55,15 @@ public class GUI extends JFrame {
         container.add(fieldDelay);
         container.add(waitingClick);
 
-        //листенер лкм
+        //листенеры
         LCM.addActionListener(new LcmEventList());
         container.add(LCM);
 
-        //ты еблан, если не понял, чек выше
+       
         PCM.addActionListener(new PcmEventList());
         container.add(PCM);
 
-        //ты еблан, если не понял, чек ещё выше
+     
         SCM.addActionListener(new ScClickEventList());
         container.add(SCM);
 
@@ -75,11 +75,11 @@ public class GUI extends JFrame {
         button.setIcon(new ImageIcon("D:\\кнопка.png"));
         button.setRolloverIcon(new ImageIcon("D:\\кнопкаRes.png"));
 
-        //отключение ебучей обводки
+        //отключение обводки
         button.setBorderPainted(false);
         button.setFocusPainted(false);
         button.setContentAreaFilled(false);
-       // container.setBackground(Color.BLACK);
+    
 
     }
 
@@ -127,7 +127,7 @@ public class GUI extends JFrame {
 
         }
     }
-    /* ебашит крч сетер  */
+    /* крч сетер  */
     class ScClickEventList implements ActionListener {
 
         @Override
@@ -136,8 +136,6 @@ public class GUI extends JFrame {
             ClickChech.setValue(check2);
         }
     }
-
-
 }
 
 

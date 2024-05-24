@@ -14,7 +14,7 @@ public class AutoclickerLogic {
         wait(1000);
         while (chech == true) {
             System.out.println("Left Клик");
-            //mouseLeftClick();
+            mouseLeftClick();
             wait(delay);
         }
     }
@@ -25,7 +25,7 @@ public class AutoclickerLogic {
         wait(1000);
         while (check1 == true) {
             System.out.println("Rigt Клик");
-           // mouseRightClick();
+           mouseRightClick();
             wait(delay);
         }
     }
@@ -36,7 +36,7 @@ public class AutoclickerLogic {
         wait(1000);
         while (check2 == true) {
             System.out.println("Scroll Клик");
-            //mouseScrollClick();
+            mouseScrollClick();
             wait(delay);
         }
     }
